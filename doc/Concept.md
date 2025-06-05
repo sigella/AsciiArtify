@@ -83,3 +83,9 @@ kind was primarily designed for testing Kubernetes itself, but may be used for l
 - Exposing ports or services outside Docker may require manual configuration.
 - No built-in dashboard or web UI—you’ll have to install one yourself.
 
+## Demo
+![k3d demo](demo.gif)
+
+## Conclusion
+
+**K3d was chosen for its simplicity, fast setup, and strong alignment with local development needs.** Docker's licensing is not a limiting factor at this point, as the small two-person team qualifies for free usage. While Podman was considered for its rootless operation and systemd integration, its ecosystem is still maturing. Minikube, though powerful, demands more system resources and is less optimal for quick iteration. Kind excels in CI/CD environments but lacks the ease of use and interactivity desired for day-to-day local development.
